@@ -1,3 +1,9 @@
+import assignments from "../assets/AssignmentsDashboard.png";
+import discord from "../assets/discordBot3.png";
+import cpu from "../assets/cpu.png";
+import sweetbot from "../assets/sweetbot.png";
+import tweet from "../assets/tweetgender2.png";
+
 export const navigation = [
   {
     id: "0",
@@ -23,7 +29,7 @@ export const projects = [
        successfully enhancing the user experience of monitoring learners’ 
        progress on assignments within their training application.`,
     tools: "React · ASP.NET · Typescript · C# · HTML · CSS",
-    image: "./src/assets/AssignmentsDashboard.png",
+    image: assignments,
     url: "https://drive.google.com/file/d/1dOCVIAPIIL3VSWkoIWc1hXwVW9ZK4_Gz/view?usp=sharing",
   },
   {
@@ -31,7 +37,7 @@ export const projects = [
     description: `Developed a Discord bot in Python utilizing the Discord API to offer users convenient
        access to real-time parking availability information at UTD.`,
     tools: "Python · BeautifulSoup · Discord API",
-    image: "./src/assets/discordBot3.PNG",
+    image: discord,
     url: "https://github.com/TediDika/discord-park-bot",
   },
   {
@@ -40,7 +46,7 @@ export const projects = [
        replicate CPU behavior, registers, and interrupt handling. The processes are
         connected via a simulated 'stream' acting as a system bus.`,
     tools: "Java",
-    image: "./src/assets/cpu.png",
+    image: cpu,
     url: "https://github.com/TediDika/CPU-Memory-Simulator",
   },
   {
@@ -48,7 +54,7 @@ export const projects = [
     description: `Developed an advanced chatbot using the GPT API for generating personalized 
       dessert recipes, considering user allergies.`,
     tools: "Python · OpenAI API · spaCy · nltk ",
-    image: "./src/assets/sweetbot.png",
+    image: sweetbot,
     url: "https://github.com/TediDika/NLP-Portfolio/blob/main/Homework09/ChatBot%20Report.pdf",
   },
   {
@@ -56,7 +62,7 @@ export const projects = [
     description: `Classified tweets as being written by a male or female through text classification,
        using various deep learning models such as RNN, CNN, and embeddings.`,
     tools: "Tensorflow · scikit-learn · numpy · pandas",
-    image: "./src/assets/tweetgender2.png",
+    image: tweet,
     url: "https://github.com/TediDika/NLP-Portfolio/blob/main/Homework10/TextClassification2.ipynb",
   },
 ];

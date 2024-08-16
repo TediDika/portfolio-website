@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { navigation } from "../constants";
 import { useState } from "react";
+import yinyang from "../assets/yinyang.svg";
 
 const Navbar = () => {
   const pathname = useLocation();
@@ -20,7 +21,7 @@ const Navbar = () => {
           onClick={handleClick}
         >
           <img
-            src="./src/assets/yinyang.svg"
+            src={yinyang}
             height={60}
             width={60}
             alt="TediLogo"
