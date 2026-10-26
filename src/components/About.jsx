@@ -7,26 +7,29 @@ const About = () => {
       <div className="flex flex-col h-210 w-[50rem] dark:bg-black p-6">
         <h1 className="mb-10 h1">About.</h1>
         <p>
-          Hi there! I’m Tedi Dika, a recent graduate with a B.S. in Computer
-          Science from the University of Texas at Dallas. I am currently seeking
-          an entry-level software engineer role. Throughout my studies, I've
-          gained proficiency in multiple programming languages, including Java,
-          JavaScript, C#, C++, Python, and SQL, alongside a deep understanding
-          of software development methodologies and best practices. I am
-          passionate about full-stack development and eager to learn new
-          technologies!
+          Hi there! I’m Tedi Dika, a graduate student pursuing an M.S. in Computer Science 
+          at the University of Texas at Dallas, focusing on Intelligent Systems. 
+          I also earned my bachelor’s in Computer Science from UTD.
         </p>
         <p className="mt-[2.5rem]">
-          My love for programming began in my junior year of high school when I
-          first started coding in Java. I’m drawn to the puzzle-solving aspect
-          of programming and the creative freedom it offers in problem-solving
-          and UI/UX development. What excites me most about this field is that
-          it's a lifelong learning journey, an industry that’s constantly
-          evolving, where every day brings new challenges and opportunities to
-          grow!
+          At UTD, I’ve been taking every opportunity I can to get hands on experience 
+          with AI and machine learning. I recently competed in my first hackathon, hosted 
+          by Noetic at UTD, where my team won with a project that analyzed encrypted 
+          network traffic. I built and tuned our random forest model, helped build the React 
+          dashboard, and presented our approach to the judges. Outside of class, I’m on the 
+          software teams for UTD’s Neurotech club, which is building an EEG brain-computer 
+          interface to control a robotic prosthetic, and Nebula Labs, where I contribute to 
+          open source tools for UTD students.
         </p>
         <p className="mt-[2.5rem]">
-          In my free time, I enjoy mountain biking, watching movies, and
+          My love for programming started in my junior year of high school, when I first wrote 
+          code in Java. I enjoy both the puzzle-solving and the creativity it allows, 
+          from finding new ways to approach a problem to designing interfaces people enjoy 
+          using. I also love that there’s always something new to learn. I’m currently looking 
+          for roles in software engineering and AI/ML.
+        </p>
+        <p className="mt-[2.5rem]">
+          In my free time, I enjoy volleyball, watching movies, and
           spending time with friends and family. Please feel free to reach out
           to me at{" "}
           <span className="underline decoration-sky-500 inline">
