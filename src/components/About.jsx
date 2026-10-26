@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="flex justify-center items-center w-full h-210 mt-[20rem]">
       <div id="about" className="relative -top-[41rem]"></div>
-      <div className="flex flex-col h-210 w-[50rem] dark:bg-black p-6">
+      <div className="flex flex-col h-210 w-[50rem] p-6">
         <h1 className="mb-10 h1">About.</h1>
         <p>
           Hi there! I’m Tedi Dika, a graduate student pursuing an M.S. in Computer Science 
@@ -23,7 +23,7 @@ const About = () => {
         </p>
         <p className="mt-[2.5rem]">
           My love for programming started in my junior year of high school, when I first wrote 
-          code in Java. I enjoy both the puzzle-solving and the creativity it allows, 
+          code in Java. I enjoy both the puzzle solving and the creativity it allows, 
           from finding new ways to approach a problem to designing interfaces people enjoy 
           using. I also love that there’s always something new to learn. I’m currently looking 
           for roles in software engineering and AI/ML.

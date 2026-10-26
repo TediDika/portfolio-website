@@ -39,6 +39,25 @@
     transform-origin: center;
 }
 
+.star {
+    animation: twinkle ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 88%, 100% {
+        opacity: 1;
+    }
+    94% {
+        opacity: 0.2;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .star {
+        animation: none;
+    }
+}
+
 .rotate-45 {
     @apply rotate-[45deg];
 }
