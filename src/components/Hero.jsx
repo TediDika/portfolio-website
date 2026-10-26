@@ -1,20 +1,58 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { Suspense, lazy } from "react";
-import helloWorld from "../assets/HelloWorld.png";
 import { globeConfig, colors, sampleArcs } from "../constants";
 const World = lazy(() => import("./Globe"));
 const globeFade = "linear-gradient(to bottom, black 65%, transparent 90%)";
 
+// Where the globe's center is, measured from the top-left of the 700 x 170
+// "Hello World!" box: 8px right of the page center and 192px below the box.
+const GLOBE_X = 358;
+const GLOBE_Y = 362;
+const TEXT_RADIUS = 273;
+const helloArc = `M ${GLOBE_X - TEXT_RADIUS} ${GLOBE_Y} A ${TEXT_RADIUS} ${TEXT_RADIUS} 0 0 1 ${GLOBE_X + TEXT_RADIUS} ${GLOBE_Y}`;
+const helloTextClass =
+  "text-[44px] sm:text-[76px] md:text-[91px] font-extrabold tracking-wider";
+
 export function Hero() {
   return (
     <>
-      <div className="flex justify-center items-center  mt-[4rem]">
-        <img
-          src={helloWorld}
-          alt="Hello World!"
-          className="w-full max-w-[40rem]"
-        />
+      <div className="flex justify-center mt-[4rem]">
+        <svg
+          viewBox="0 0 700 170"
+          preserveAspectRatio="xMidYMin slice"
+          className="w-full max-w-[700px] h-[170px] overflow-visible"
+          role="img"
+          aria-label="Hello World!"
+        >
+          <defs>
+            <path id="hello-arc" d={helloArc} />
+            {/* In a mask, white areas stay visible and black areas are cut away.
+                Cutting away the inside of the letters leaves only the outer edge of
+                the outline, without the lines where the font's letter shapes overlap. */}
+            <mask id="hello-hollow">
+              <rect x="-200" y="-200" width="1100" height="800" fill="white" />
+              <text className={helloTextClass} fill="black" textAnchor="middle">
+                <textPath href="#hello-arc" startOffset="50%">
+                  Hello World!
+                </textPath>
+              </text>
+            </mask>
+          </defs>
+          <text
+            className={helloTextClass}
+            fill="none"
+            stroke="white"
+            strokeWidth={3}
+            strokeLinejoin="round"
+            textAnchor="middle"
+            mask="url(#hello-hollow)"
+          >
+            <textPath href="#hello-arc" startOffset="50%">
+              Hello World!
+            </textPath>
+          </text>
+        </svg>
       </div>
 
       <div className="flex flex-row items-center justify-center h-[24rem] mb-20 pr-[1rem] relative w-full">
