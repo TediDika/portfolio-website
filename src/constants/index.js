@@ -1,6 +1,6 @@
 import assignments from "../assets/AssignmentsDashboard.png";
 import discord from "../assets/discordBot3.png";
-import cpu from "../assets/cpu.png";
+import cpu from "../assets/cpu.jpg";
 import sweetbot from "../assets/sweetbot.png";
 import tweet from "../assets/tweetgender2.png";
 
