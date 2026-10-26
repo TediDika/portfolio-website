@@ -12,7 +12,7 @@ const About = () => {
           I also earned my bachelor’s in Computer Science from UTD.
         </p>
         <p className="mt-[2.5rem]">
-          At UTD, I’ve been taking every opportunity I can to get hands on experience 
+          At UT Dallas, I’ve been taking every opportunity I can to get hands on experience 
           with AI and machine learning. I recently competed in my first hackathon, hosted 
           by Noetic at UTD, where my team won with a project that analyzed encrypted 
           network traffic. I built and tuned our random forest model, helped build the React 
