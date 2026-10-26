@@ -3,9 +3,10 @@ import tedi from "../assets/tedi.jpg";
 const About = () => {
   return (
     <div className="flex justify-center items-center w-full h-210 mt-[20rem]">
-      <div id="about" className="relative -top-[41rem]"></div>
       <div className="flex flex-col h-210 w-[50rem] p-6">
-        <h1 className="mb-10 h1">About.</h1>
+        <h1 id="about" className="mb-10 h1 scroll-mt-[7rem]">
+          About.
+        </h1>
         <p>
           Hi there! I’m Tedi Dika, a graduate student pursuing an M.S. in Computer Science 
           at the University of Texas at Dallas, focusing on Intelligent Systems. 
