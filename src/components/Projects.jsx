@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       <div className="flex justify-center items-center w-full h-210 mt-[20rem]">
         <div id="projects" className="relative -top-[10rem]"></div>
-        <div className="flex flex-col h-210 w-[50rem] dark:bg-black p-6">
+        <div className="flex flex-col h-210 w-[50rem] p-6">
           <h1 className="mb-5 h1">Projects.</h1>
         </div>
       </div>

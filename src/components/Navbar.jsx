@@ -5,27 +5,22 @@ import yinyang from "../assets/yinyang.svg";
 
 const Navbar = () => {
   const pathname = useLocation();
-  const [rotated, setRotated] = useState(false);
+  const [rotation, setRotation] = useState(0);
 
   const handleClick = () => {
-    setRotated(!rotated);
+    setRotation(rotation + 180);
   };
   return (
     <div className="fixed top-0 left-0 w-full h-[6.25rem]  z-50 backdrop-blur-2xl">
       <div className="fixed flex justify-between items-center lg:w-1/2 left-1/2 w-full -translate-x-1/2 p-5 transition-all duration-300">
-        <a
-          className={`w-[5rem] ${
-            rotated ? "rotate-on-click" : "rotate-0"
-          } transition-transform duration-300`}
-          href="#home"
-          onClick={handleClick}
-        >
+        <a className="w-[5rem]" href="#home" onClick={handleClick}>
           <img
             src={yinyang}
             height={60}
             width={60}
             alt="TediLogo"
-            className="transform-origin-center"
+            className="block transition-transform duration-300"
+            style={{ transform: `rotate(${rotation}deg)` }}
           />
         </a>
         <nav className="space-x-3">

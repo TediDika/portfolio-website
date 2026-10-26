@@ -11,7 +11,7 @@ const Contact = () => {
       className="flex justify-center items-center w-full h-210 mt-[20rem]"
       id="contact"
     >
-      <div className="flex flex-col h-210 w-[50rem] dark:bg-black p-6">
+      <div className="flex flex-col h-210 w-[50rem] p-6">
         <h1 className="mb-10 h1">Contact.</h1>
         <div className="flex justify-evenly py-[1.5rem]">
           <a
@@ -38,7 +38,7 @@ const Contact = () => {
 
           <a
             className="flex items-center justify-center lg:w-[6.5rem] lg:h-[6.5rem] w-[5rem] h-[5em] bg-n-7 rounded-full transition-colors hover:bg-n-6"
-            href="mailto:tdika7@gamil.com"
+            href="mailto:tdika7@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

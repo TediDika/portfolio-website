@@ -4,11 +4,12 @@ import React, { Suspense, lazy } from "react";
 import helloWorld from "../assets/HelloWorld.png";
 import { globeConfig, colors, sampleArcs } from "../constants";
 const World = lazy(() => import("./Globe"));
+const globeFade = "linear-gradient(to bottom, black 65%, transparent 90%)";
 
 export function Hero() {
   return (
     <>
-      <div className="flex justify-center items-center  mt-[4rem] dark:bg-black">
+      <div className="flex justify-center items-center  mt-[4rem]">
         <img
           src={helloWorld}
           alt="Hello World!"
@@ -16,10 +17,12 @@ export function Hero() {
         />
       </div>
 
-      <div className="flex flex-row items-center justify-center h-[24rem] mb-20 pr-[1rem] dark:bg-black bg-white relative w-full">
+      <div className="flex flex-row items-center justify-center h-[24rem] mb-20 pr-[1rem] relative w-full">
         <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[40rem] px-4 ">
-          <div className="absolute w-full bottom-15 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40 " />
-          <div className="absolute w-full h-72 h-full z-10">
+          <div
+            className="absolute w-full h-72 h-full z-10"
+            style={{ maskImage: globeFade }}
+          >
             <Suspense fallback={<div>Loading...</div>}>
               <World data={sampleArcs} globeConfig={globeConfig} />
             </Suspense>
@@ -38,7 +41,7 @@ export function Hero() {
         transition={{
           duration: 1,
         }}
-        className="div dark:bg-black"
+        className="div"
       >
         <h2 className="text-center text-3xl md:text-4xl font-bold text-black dark:text-white">
           My name is Tedi!
